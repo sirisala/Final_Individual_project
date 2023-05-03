@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test2(failed)" verbose="0">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="Url" value="https://cloud.google.com/products/calculator"/>
+    <classes>
+      <class name="org.example.Google_Price_Cal_Test">
+        <methods>
+          <include name="openbrowser"/>
+          <include name="check_Data_is_correct"/>
+          <include name="driverclode"/>
+          <include name="checkInformationInVmClassString"/>
+        </methods>
+      </class> <!-- org.example.Google_Price_Cal_Test -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

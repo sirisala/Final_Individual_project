@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Test1">
+
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="Url" value="https://cloud.google.com/products/calculator"></parameter>
+        <classes>
+        <class name="org.example.Google_Price_Cal_Test">
+        <methods><include name="checkInformationInVmClassString"/>
+            <include name="check_Data_is_correct"/>
+        </methods>
+        </class>
+    </classes>
+</test>
+    <test verbose="2" preserve-order="true" name="Test2">
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="Url" value="https://cloud.google.com/products/calculator"></parameter>
+        <classes>
+            <class name="org.example.Google_Price_Cal_Test">
+                <methods><include name="checkInformationInVmClassString"/>
+                    <include name="check_Data_is_correct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
